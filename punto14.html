@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de deportes</title>
+  <link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+<div class="caja">
+  <form action="procesar.php" method="post">
+    <h1>Formulario de deportes</h1>
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre" required>
+    <br>
+    <label for="deportes">Deportes:</label>
+    <input type="checkbox" name="deportes[]" value="futbol">Fútbol
+    <input type="checkbox" name="deportes[]" value="basket">Basket
+    <input type="checkbox" name="deportes[]" value="tennis">Tennis
+    <input type="checkbox" name="deportes[]" value="voley">Voley
+    <br>
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+</body>
+</html>
